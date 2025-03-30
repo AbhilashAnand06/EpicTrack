@@ -1,0 +1,78 @@
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Define theme accent color variable with default */
+:root {
+  --accent-hue: 240;
+}
+
+/* Update primary color based on accent hue */
+html {
+  --primary: var(--accent-hue) 80% 50%;
+  --primary-foreground: var(--accent-hue) 10% 98%;
+}
+
+/* Dark mode accent adjustments */
+.dark {
+  --primary: var(--accent-hue) 60% 60%;
+  --primary-foreground: var(--accent-hue) 10% 98%;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+}
+
+/* Mobile-friendly scrollable areas */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+
+/* Responsive tables for small screens */
+@media (max-width: 640px) {
+  .responsive-table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+/* Card and container spacing on mobile */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-container > * {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Font size adjustments for mobile */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  h2 {
+    font-size: 1.25rem !important;
+  }
+  
+  .text-sm {
+    font-size: 0.8125rem !important;
+  }
+}
+
+/* Progress bar color adjustments based on accent */
+.progress-indicator {
+  background-color: hsl(var(--primary));
+}
