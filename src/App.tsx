@@ -14,7 +14,6 @@ import Transactions from "./pages/Transactions";
 import Analytics from "./pages/Analytics";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
-import GuidedTour from "./components/GuidedTour";
 
 const queryClient = new QueryClient();
 
@@ -38,7 +37,6 @@ const App = () => (
               </Route>
               <Route path="*" element={<NotFound />} />
             </Routes>
-            <GuidedTour />
           </BrowserRouter>
         </TooltipProvider>
       </TourProvider>
