@@ -1,8 +1,8 @@
-# Finance Zenith Display
+# EquiTrack
 
 A modern financial dashboard and portfolio management application built with React and TypeScript.
 
-![Finance Zenith Display](https://placehold.co/800x400?text=Finance+Zenith+Display)
+![EquiTrack](https://placehold.co/800x400?text=Finance+Zenith+Display)
 
 ## Features
 
