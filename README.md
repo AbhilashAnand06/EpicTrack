@@ -2,7 +2,7 @@
 
 A modern financial dashboard and portfolio management application built with React and TypeScript.
 
-![EquiTrack](https://github.com/AbhilashAnand06/EpicTrack/blob/main/Dashboard.png?raw=true))
+![EquiTrack](https://github.com/AbhilashAnand06/EpicTrack/blob/main/Dashboard.png?raw=true)
 
 ## Features
 
